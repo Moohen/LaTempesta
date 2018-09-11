@@ -32,17 +32,32 @@ body {
   height: 8vh;
   width: 8vh; }
 
-.logo {
-  height: calc(1.09*15vh);
-  width: 15vh;
-  margin-left: -3.8%; }
-
-.logo_container .row {
+.topnav_container .row {
   height: 20vh;
   padding-top: 0.5vh;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
+
+.logo_container {
+  height: calc(1.09*15vh);
+  width: 15vh;
+  margin-left: -3.8%; }
+
+.logo {
+  height: 100%;
+  width: 100%; }
+
+.languages {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white; }
+
+.languages a {
+  text-decoration: none;
+  color: #f5b604; }
 
 .main_content .row {
   height: 58vh;
