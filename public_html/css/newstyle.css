@@ -1,0 +1,89 @@
+/* 
+    Created on : 2018-09-10, 16:53:09
+    Author     : Moohen
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.row {
+  width: 100%; }
+
+.icon {
+  height: 8vh;
+  width: 8vh; }
+
+.logo {
+  height: calc(1.09*15vh);
+  width: 15vh;
+  margin-left: -3.8%; }
+
+.logo_container .row {
+  height: 20vh;
+  padding-top: 0.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.main_content .row {
+  height: 58vh;
+  padding-bottom: 11vh;
+  padding-left: 1vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end; }
+
+.footer .row {
+  height: 22vh; }
+
+.nav_container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.nav_btn {
+  text-transform: uppercase;
+  text-align: left;
+  color: #FFF;
+  border: none;
+  background: none;
+  height: 12vh;
+  min-width: 120px;
+  margin: 0px 10px;
+  font-size: 26px;
+  padding-right: 20px;
+  padding-bottom: 2vh; }
+
+.nav_btn:nth-child(1) {
+  background-color: rgba(255, 0, 0, 0.8); }
+
+.nav_btn:nth-child(2) {
+  background-color: rgba(255, 165, 0, 0.8); }
+
+.nav_btn:nth-child(3) {
+  background-color: rgba(255, 255, 0, 0.8); }
+
+.nav_btn:nth-child(4) {
+  background-color: rgba(255, 192, 203, 0.8); }
+
+.nav_btn:nth-child(5) {
+  background-color: rgba(238, 130, 238, 0.8); }
+
+.nav_btn:nth-child(6) {
+  background-color: rgba(0, 128, 0, 0.8); }
+
+.nav_btn:nth-child(7) {
+  background-color: rgba(0, 0, 255, 0.8); }
+
+/*# sourceMappingURL=newstyle.css.map */
