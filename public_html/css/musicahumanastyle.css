@@ -1,0 +1,292 @@
+/* 
+    Created on : 2018-09-25, 21:39:33
+    Author     : Moohen
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.row {
+  width: 100%; }
+
+/* Top content */
+.topnav-container {
+  height: 20vh; }
+
+.topnav-container .row {
+  padding-top: 1.4vh;
+  display: flex;
+  justify-content: center;
+  position: relative; }
+
+.icons-container {
+  position: absolute;
+  top: 1.27vh;
+  left: 44.5vh; }
+
+.fa {
+  opacity: 0.95;
+  margin: -10px 0px;
+  padding: 10px 5px;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none; }
+
+.fa:hover {
+  opacity: 0.7; }
+
+.fa-facebook {
+  font-size: 17px;
+  padding: 0px 5px 50px 5px;
+  color: white; }
+
+.fa-instagram {
+  padding: 0px 5px 50px 5px;
+  color: white; }
+
+.fa-envelope {
+  padding: 0px 5px 50px 5px;
+  color: white; }
+
+.logo-btn {
+  height: 12vh;
+  width: 12vh;
+  outline: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: 4px 4px 5px 3px rgba(10, 10, 10, 0.9); }
+
+.logo {
+  height: 100%;
+  width: 100%; }
+
+.logo:hover {
+  opacity: 0.85; }
+
+.languages-container {
+  position: fixed;
+  top: 1.25vh;
+  right: 45vh; }
+
+.languages {
+  opacity: 0.95;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+  padding: 0px 2px 50px 2px; }
+
+.languages:hover {
+  opacity: 0.8; }
+
+.languages-box {
+  display: inline-block; }
+
+.languages-icon {
+  border: 1px solid black;
+  height: 15px; }
+
+/* Mid content */
+.main-content {
+  height: 50vh; }
+
+.main-content .row {
+  padding-bottom: 0.7vh;
+  padding-left: 2vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  position: relative; }
+
+.article {
+  height: 54vh;
+  width: 53.5vw;
+  border-radius: 8px;
+  position: absolute;
+  top: -4.2vh;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(242, 242, 240, 0.95);
+  overflow: auto; }
+
+.text-about-humana {
+  margin: 30px;
+  max-width: 45vh;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: justify;
+  float: right; }
+
+.text-club-humana {
+  margin: 20px;
+  margin-top: 5vh;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: justify;
+  display: flex; }
+
+.text-management-humana-top {
+  margin: 20px;
+  margin-top: 4vh;
+  margin-bottom: 0vh;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: justify;
+  display: inline-block; }
+
+.text-management-humana {
+  margin: 20px;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: justify;
+  display: inline-block; }
+
+.text-bank-account {
+  margin: 20px;
+  margin-top: 5vh;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: right; }
+
+.management-humana {
+  display: flex; }
+
+.left-site {
+  float: left; }
+
+.right-site {
+  float: right; }
+
+.photo-musica-humana {
+  margin: 40px;
+  margin-right: 0px;
+  float: left;
+  width: calc(5.43*9vh);
+  height: 9vh; }
+
+.photo-one-procent {
+  float: right;
+  margin: 20px;
+  width: calc(1.5*14vh);
+  height: 14vh; }
+
+/* Bottom content */
+.footer {
+  height: 30vh; }
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.nav-btn {
+  height: 9vh;
+  width: 16vh;
+  margin: 0.5vh 0.3vh;
+  outline: none;
+  background: none;
+  border: none;
+  border-radius: 2vh;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  transition: 0.4s;
+  transition-timing-function: linear;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.nav-btn:nth-child(1) {
+  text-align: right; }
+
+.nav-btn:nth-child(2) {
+  text-align: right; }
+
+.nav-btn:nth-child(3) {
+  text-align: right; }
+
+.nav-btn:nth-child(4) {
+  text-align: center; }
+
+.nav-btn:nth-child(5) {
+  text-align: left; }
+
+.nav-btn:nth-child(6) {
+  text-align: left; }
+
+.nav-btn:nth-child(7) {
+  text-align: left; }
+
+.nav-btn:hover {
+  border-radius: 1.5vh 1.5vh 1vh 1.5vh;
+  box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.45);
+  color: rgba(0, 0, 0, 0.85); }
+
+.nav-btn:nth-child(1):hover {
+  background-color: rgba(214, 12, 12, 0.85); }
+
+.nav-btn:nth-child(2):hover {
+  background-color: rgba(255, 14, 70, 0.8); }
+
+.nav-btn:nth-child(3):hover {
+  background-color: rgba(255, 167, 41, 0.9); }
+
+.nav-btn:nth-child(4):hover {
+  background-color: rgba(255, 236, 62, 0.9); }
+
+.nav-btn:nth-child(5):hover {
+  background-color: rgba(24, 204, 119, 0.9); }
+
+.nav-btn:nth-child(6):hover {
+  background-color: rgba(32, 139, 250, 0.9); }
+
+.nav-btn:nth-child(7):hover {
+  background-color: rgba(160, 47, 207, 0.9); }
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #808080;
+  border-radius: 10px; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #404040; }
+
+/*# sourceMappingURL=musicahumanastyle.css.map */

@@ -1,19 +1,21 @@
+@charset "UTF-8";
 /* 
     Created on : 2018-09-10, 16:53:09
     Author     : Moohen
 */
+/* All pages */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
 body {
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Playfair Display', serif; }
 
 .container {
   width: 100%;
   height: 100vh;
-  background-image: url("../img/background.jpg");
+  background-image: url("../img/background_test.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -21,167 +23,370 @@ body {
 .row {
   width: 100%; }
 
-.icon_btn {
-  background: transparent;
-  border: none;
+/* Top content */
+.icons-container {
+  position: absolute;
+  left: 10vh; }
+
+.icon-btn {
+  margin: 20px 0px;
+  height: 7vh;
+  width: 7vh;
   outline: none;
+  background: none;
+  border: none;
   cursor: pointer; }
 
 .icon {
-  font-size: 25px;
-  height: 8vh;
-  width: 8vh; }
+  height: 100%;
+  width: 100%; }
 
-.topnav_container .row {
+.topnav-container .row {
   height: 20vh;
-  padding-top: 0.5vh;
+  padding-top: 1.4vh;
   display: flex;
   justify-content: center;
-  align-items: center;
   position: relative; }
 
-.logo_container {
-  height: calc(1.09*15vh);
-  width: 15vh;
-  margin-left: -3.8%; }
+.logo-btn {
+  height: 12vh;
+  width: 12vh;
+  outline: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: 4px 4px 5px 3px rgba(10, 10, 10, 0.9); }
 
 .logo {
   height: 100%;
   width: 100%; }
 
-.languages {
+.topnav-container-index .row {
+  height: 20vh;
+  padding-top: 4vh;
+  display: flex;
+  justify-content: center;
+  position: relative; }
+
+.logo-btn-index {
+  height: 14vh;
+  width: 14vh;
+  outline: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: 8px 8px 5px 3px rgba(10, 10, 10, 0.9); }
+
+.logo-index {
+  height: 100%;
+  width: 100%; }
+
+.languages-container {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  color: white; }
+  top: 12vh;
+  right: 30%; }
 
-.languages a {
+.languages {
   text-decoration: none;
-  color: #f5b604; }
+  margin-right: 3px; }
 
-.main_content .row {
-  height: 58vh;
-  padding-bottom: 11vh;
-  padding-left: 1vw;
+/* Mid content */
+.main-content .row {
+  height: 49vh;
+  padding-bottom: 0.7vh;
+  padding-left: 2vw;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
   position: relative; }
 
-.footer .row {
-  height: 22vh; }
+/* Subpages */
+.article {
+  height: 50vh;
+  width: 52vw;
+  border-radius: 8px;
+  position: absolute;
+  top: -3.2vh;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(242, 242, 240, 0.95);
+  display: flex; }
 
-.nav_container {
-  height: 100%;
-  width: 100%;
+.text {
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.8;
+  text-align: justify;
+  overflow: auto;
+  padding: 20px 20px 0px 0px; }
+
+.photo {
+  padding-left: 20px;
+  margin: auto;
+  position: relative; }
+
+/* Jakbu Burzyński */
+.burzynski-photo {
+  margin-right: 20px;
+  height: calc(32vh*1.41);
+  width: 32vh; }
+
+/* La Tempesta */
+.latepmesta-photo {
+  margin-right: 20px;
+  height: 37vh;
+  width: calc(37vh*1.33); }
+
+/* Recordings */
+.mid-recordings {
+  padding-top: 5vh;
+  padding-left: calc((52vw - (96vh + 48px))/2); }
+
+.photo-top-recording {
+  /*    position: relative;
+      top: 6vh;
+      left: 3vh;*/
+  margin-top: 0.3vh;
+  margin-right: 3vh;
+  margin-left: 3px;
+  height: 22vh;
+  width: 22vh;
+  float: left; }
+
+.photo-bottom-recordings {
+  /*    position: relative;
+      top: 9.5vh;
+      left: 4vh;*/
+  display: inline-block;
+  height: 12vh;
+  width: 12vh; }
+
+.photo-mid-recordings {
+  /*    position: relative;
+      top: 6vh;
+      left: 4vh;*/
+  height: 12vh;
+  width: 12vh;
+  display: inline-block;
+  display: block;
+  float: left;
+  margin: 0.3vh 3px; }
+
+.article-recordings {
+  height: 50vh;
+  width: 52vw;
+  border-radius: 8px;
+  position: absolute;
+  top: -3.2vh;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(242, 242, 240, 0.95);
+  display: flex;
+  overflow: auto; }
+
+/* Bottom content */
+.footer .row {
+  height: 30vh; }
+
+.nav-container {
   display: flex;
   justify-content: center;
   align-items: center; }
 
-.nav_btn {
-  font-family: 'Playfair Display', serif;
-  font-weight: 600;
+.nav-btn {
+  margin: 20px 5px;
+  padding: 1.5vh 20px 1.5vh 20px;
+  outline: none;
+  background: none;
+  border: none;
+  border-radius: 5%;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.1;
   text-transform: uppercase;
   text-align: left;
-  color: rgba(255, 255, 255, 0.5) !important;
-  border: none;
-  background: none;
-  height: 12vh;
-  min-width: 120px;
-  margin: 0px 10px;
-  font-size: 26px;
-  padding: 0 20px 2vh 5px;
+  color: black;
   cursor: pointer;
-  transition: all 0.5s; }
+  transition: 1s; }
 
-.nav_btn span {
-  transition: 0.5s; }
+.nav-btn:hover {
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.45);
+  color: rgba(0, 0, 0, 0.9) !important;
+  background: rgba(60, 0, 0, 0.7); }
 
-.nav_btn:hover span {
-  padding-right: 35px; }
+.nav-btn:nth-child(1) {
+  text-align: right; }
 
-/*.nav-btn{
-    -webkit-animation-name: grow;
-    -webkit-animation-duration: 0.4s;
-    -webkit-animation-direction: alternate;
-    animation-name: grow;
-    animation-duration: 4s;
-    animation-direction: alternate;
-}
+.nav-btn:nth-child(2) {
+  text-align: right; }
 
-@-webkit-keyframes grow {
-    0% {width: 20px;}
-    100% {width: 70px;}
-}
+.nav-btn:nth-child(3) {
+  text-align: right; }
 
-@keyframes grow {
-    0% {width: 20px;}
-    100% {width: 70px;}
+.nav-btn:nth-child(4) {
+  text-align: center; }
+
+.nav-btn:nth-child(1):hover {
+  background-color: rgba(184, 39, 26, 0.9);
+  color: rgba(34, 204, 170, 0.9);
+  transition: 1s; }
+
+.nav-btn:nth-child(2):hover {
+  background-color: rgba(254, 174, 45, 0.9);
+  color: rgba(68, 34, 153, 0.9);
+  transition: 1s; }
+
+.nav-btn:nth-child(3):hover {
+  background-color: rgba(208, 195, 16, 0.9);
+  color: rgba(68, 34, 153, 0.9);
+  transition: 1s; }
+
+.nav-btn:nth-child(4):hover {
+  background-color: rgba(105, 208, 37, 0.9);
+  color: rgba(208, 195, 16, 0.9);
+  transition: 1s; }
+
+.nav-btn:nth-child(5):hover {
+  background-color: rgba(34, 204, 170, 0.9);
+  color: rgba(238, 17, 0, 0.9);
+  transition: 1s; }
+
+.nav-btn:nth-child(6):hover {
+  background-color: rgba(239, 167, 222, 0.9);
+  color: rgba(254, 174, 45, 0.9);
+  transition: 1s; }
+
+.nav-btn:nth-child(7):hover {
+  background-color: rgba(210, 137, 227, 0.9);
+  color: rgba(105, 208, 37, 0.9);
+  transition: 1s; }
+
+/*.nav_btn:hover span {
+    padding-right: 35px;    
 }*/
-.nav_btn:nth-child(1) {
-  color: #702a0e;
-  background-color: rgba(63, 1, 2, 0.9); }
+/*.nav_btn:nth-child(4):hover span {
+    padding-right: 80px;
+}*/
+/* Recordings modal */
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  cursor: pointer;
+  transition: 0.3s; }
 
-.nav_btn:nth-child(2) {
-  color: #702a0e;
-  background-color: rgba(166, 95, 29, 0.9); }
+#myImg:hover {
+  opacity: 0.7; }
 
-.nav_btn:nth-child(3) {
-  color: #a65f1d;
-  background-color: rgba(63, 1, 2, 0.9); }
+.modal-background {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 40px;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.95);
+  justify-content: center; }
 
-.nav_btn:nth-child(4) {
-  color: #a65f1d;
-  background-color: rgba(166, 95, 29, 0.9); }
-
-.nav_btn:nth-child(4):hover span {
-  padding-right: 80px; }
-
-.nav_btn:nth-child(5) {
-  color: #a65f1d;
-  background-color: rgba(63, 1, 2, 0.9); }
-
-.nav_btn:nth-child(6) {
-  color: #702a0e;
-  background-color: rgba(166, 95, 29, 0.9); }
-
-.nav_btn:nth-child(7) {
-  color: #702a0e;
-  background-color: rgba(63, 1, 2, 0.9); }
-
-.article {
-  width: 50vw;
-  height: 54vh;
-  border: 1px solid black;
-  border-radius: 3px;
-  position: absolute;
-  top: 2vh;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(255, 255, 255, 0.9);
+.modal-content {
+  height: 80vh;
+  width: 80vw;
   display: flex;
   padding: 2vh 20px; }
 
-.photo .burzynskiphoto {
-  margin-right: 20px;
-  height: 50vh;
-  width: calc(0.71*50vh); }
+.modal-image {
+  margin: auto;
+  height: 40vh;
+  width: 40vh; }
 
-.text .burzynskitext {
+.modal-text {
+  margin: auto;
+  padding: 10vh 6vh;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
   text-align: justify;
-  line-height: 20px;
-  font-size: 14px;
-  font-weight: 400; }
+  overflow: auto; }
 
-.photo .latepmestaphoto {
-  margin-right: 20px;
-  height: 50vh;
-  width: calc(0.71*65vh); }
+/* Add Animation - Zoom in the Modal */
+.modal-content {
+  animation-name: zoom;
+  animation-duration: 0.8s; }
 
-.text .latepmestatext {
-  text-align: justify;
-  line-height: 20px;
-  font-size: 14px;
-  font-weight: 400; }
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -70px;
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none; }
+
+/* Position the "next button" to the right */
+.next {
+  right: 4vh;
+  border-radius: 3px 0 0 3px;
+  color: #bbb; }
+
+.prev {
+  left: 4vh;
+  border-radius: 3px 0 0 3px;
+  color: #bbb; }
+
+@keyframes zoom {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 125px;
+  right: 125px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s; }
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer; }
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%; } }
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #808080;
+  border-radius: 10px; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #404040; }
 
 /*# sourceMappingURL=newstyle.css.map */

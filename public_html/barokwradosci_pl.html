@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LaTempesta</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=latin-ext" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/v4-shims.css">
+        <link rel="stylesheet" href="css/barokwradosci.css"/>
+        <script type="text/javascript" src="js/lightbox.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <section class="topnav-container">
+                <div class="row">
+                    <div class="icons-container">
+                        <a href="https://www.facebook.com/latempestapoland/?fb_dtsg_ag=Adx_JiU0irYd47cohNlqdIxKkbzm_nU8SiRBhaaM88Al9Q%3AAdwfVHL1kOcvcP7CIISckRkLE0m6N9mlX89HBcKA9hTDoQ" target="_blank" class="fa fa-facebook"> 
+                        </a>
+                        <a href="#" target="_blank" class="fa fa-instagram">
+                        </a>
+                        <a href="#" target="_blank" class="fa fa-envelope"> 
+                        </a>
+                    </div>
+                    <div class="logo-container">
+                        <button onClick="window.location.replace('index.html')" class="logo-btn">
+                            <img src="img/logo.jpg" alt="logo LaTempesta" class="logo">
+                        </button>
+                    </div>
+                    <div class="languages-container">
+                        <div class="languages-box">
+                            <a href="barokwradosci_pl.html" class="languages">PL</a>
+                        </div>
+                        <div class="languages-box">
+                            <a href="barokwradosci_en.html" class="languages">EN</a>
+                        </div>
+                        <div class="languages-box">
+                            <a href="barokwradosci_de.html" class="languages">DE</a>
+                        </div>
+                    </div>
+                </div>
+            </section>    
+            <section class="main-content">
+                <div class="row">
+                    <article class="article">
+                        <div class="photo-container">
+                            <div class="photo-gallery">
+                                <!--<div class="photos-top">-->
+                                    <img onclick="openModal();currentSlide(1)" src="img/radosc_01.jpeg" alt="" class="photo">
+                                    <img onclick="openModal();currentSlide(2)" src="img/radosc_02.jpg" alt="" class="photo">
+                                    <img onclick="openModal();currentSlide(3)" src="img/radosc_03.jpg" alt="" class="photo">
+                                    <img onclick="openModal();currentSlide(4)" src="img/radosc_04.jpg" alt="" class="photo">
+                                    <img onclick="openModal();currentSlide(5)" src="img/radosc_05.jpg" alt="" class="photo">
+                                <!--</div>-->
+                                <!--<div class="photo-bottom">-->
+                                    <img onclick="openModal();currentSlide(6)" src="img/radosc_06.jpg" alt="" class="photo">
+                                    <img onclick="openModal();currentSlide(7)" src="img/radosc_07.jpg" alt="" class="photo">
+                                    <img onclick="openModal();currentSlide(8)" src="img/radosc_08.jpg" alt="" class="photo">
+                                    <img onclick="openModal();currentSlide(9)" src="img/radosc_09.jpg" alt="" class="photo">
+                                    <img onclick="openModal();currentSlide(10)" src="img/radosc_10.jpg" alt="" class="photo">
+                                <!--</div>-->
+                            </div>
+                        </div>
+                        <div class="text">
+                            <p class="text-barok">
+                                <b>BAROK W RADOŚCI</b><br>
+                                <br>
+                                Festiwal Muzyczny Barok w Radości odbywa się w Warszawie od 2012 roku. Organizatorem
+                                festiwalu jest Stowarzyszenie Musica Humana, zas wykonawcą-rezydentem zespół muzyki dawnej
+                                LA TEMPESTA. Wraz z zaproszonymi goścmi z kraju i zagranicy prezentują oni w kościele Matki
+                                Bożej Anielskiej w Radości najwybitniejsze arcydzieła muzyki barokowej. Dotychczas na festiwalu
+                                wystąpili artyści tej miary, co Jeremy West, Marco Vitale, Michaela Koudelková, Robert Bachara,
+                                Jan Cižmař, Andrzej Zawisza, Julita Mirosławska, Dawid Biwo, Matej Benda czy Tomaš Kardoš
+                                oraz zespoły Pandolfis Consort, Risonanza i Sabionetta. Co roku afisz festiwalu tworzony jest przez
+                                innego artystę-grafika. Oprócz corocznych edycji festiwalu, odbyły się w tym samym miejscu
+                                koncerty nadzwyczajne zespołu LA TEMPESTA: Pasja wg sw. Jana (2015), Muzyczna Austeria
+                                (2016) oraz Msza h-moll (2017). Pomysłodawcami festiwalu są Julita Mirosławska i Jakub
+                                Burzyński.<br>
+                                <br>
+                                <a href="https://www.facebook.com/barokwradosci/" class="link" target="_blank">Profil Festiwalu na Facebooku <i class="fas fa-external-link-alt"></i></a>
+                            </p>
+                        </div>
+                    </article>
+                    <div id="myModal" class="modal-background">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        
+                        <!-- Modal 1 -->
+                        
+                        <div class="mySlides">
+                            <div class="modal-content">
+                                <img src="img/radosc_01.jpeg" class="modal-image" alt="">
+                            </div>
+                        </div>
+                        
+                        <!-- Modal 2 -->
+                        
+                        <div class="mySlides">
+                            <div class="modal-content">
+                                <img src="img/radosc_02.jpg" class="modal-image" alt="">
+                            </div>
+                        </div>
+                        
+                        <!-- Modal 3 -->
+                        
+                        <div class="mySlides">
+                            <div class="modal-content">
+                                <img src="img/radosc_03.jpg" class="modal-image" alt="">
+                            </div>
+                        </div>
+                        
+                        <!-- Modal 4 -->
+                        
+                        <div class="mySlides">
+                            <div class="modal-content">
+                                <img src="img/radosc_04.jpg" class="modal-image" alt="">
+                            </div>
+                        </div>
+                        
+                        <!-- Modal 5 -->
+                        
+                        <div class="mySlides">
+                            <div class="modal-content">
+                                <img src="img/radosc_05.jpg" class="modal-image" alt="">
+                            </div>
+                        </div>
+                        
+                        <!-- Modal 6 -->
+                        
+                        <div class="mySlides">
+                            <div class="modal-content">
+                                <img src="img/radosc_06.jpg" class="modal-image" alt="">
+                            </div>
+                        </div>
+                        
+                        <!-- Modal 7 -->
+                        
+                        <div class="mySlides">
+                            <div class="modal-content">
+                                <img src="img/radosc_07.jpg" class="modal-image" alt="">
+                            </div>
+                        </div>
+                        
+                        <!-- Modal 8 -->
+                        
+                        <div class="mySlides">
+                            <div class="modal-content">
+                                <img src="img/radosc_08.jpg" class="modal-image" alt="">
+                            </div>
+                        </div>
+                        
+                        <!-- Modal 9 -->
+                        
+                        <div class="mySlides">
+                            <div class="modal-content">
+                                <img src="img/radosc_09.jpg" class="modal-image" alt="">
+                            </div>
+                        </div>
+                        
+                        <!-- Modal 10 -->
+                        
+                        <div class="mySlides">
+                            <div class="modal-content">
+                                <img src="img/radosc_10.jpg" class="modal-image" alt="">
+                            </div>
+                        </div>
+                        
+                        <!--Next/previous controls--> 
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    </div>
+                </div>
+            </section>
+            <section class="footer">
+                <div class="row">
+                    <div class="nav-container">
+                        <button onClick="window.location.replace('latempesta_pl.html')" class="nav-btn">
+                            La
+                            <br>
+                            Tem
+                            <br>
+                            pesta&nbsp;
+                        </button>
+                        <button onClick="window.location.replace('jakubburzynski_pl.html')" class="nav-btn">
+                            Jak
+                            <br>
+                            ub Bu
+                            <br>
+                            rzyński&nbsp;
+                        </button>
+                        <button onClick="window.location.replace('recordings_pl.html');" class="nav-btn">
+                            Dy
+                            <br>
+                            skog
+                            <br>
+                            rafia&nbsp;
+                        </button>
+                        <button onClick="window.location.replace('season2018_pl.html');" class="nav-btn">
+                            Se
+                            <br>
+                            &nbsp;zon
+                            <br>
+                            2018
+                        </button>
+                        <button onClick="window.location.replace('musicahumana_pl.html')" class="nav-btn">
+                            Mus
+                            <br>
+                            ica h
+                            <br>
+                            umana
+                        </button>
+                        <button onClick="window.location.replace('barokwradosci_pl.html');" class="nav-btn">
+                            Bar
+                            <br>
+                            ok w
+                            <br>
+                            Radości
+                        </button>
+                        <button onClick="window.location.replace('schlossscharfeneck_pl.html');" class="nav-btn">
+                            Sch
+                            <br>
+                            loss S
+                            <br>
+                            charfenek
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

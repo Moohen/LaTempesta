@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LaTempesta</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=latin-ext" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/v4-shims.css">
+        <link rel="stylesheet" href="css/schlossscharfeneckstyle.css"/>
+        <script type="text/javascript" src="js/lightbox.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <section class="topnav-container">
+                <div class="row">
+                    <div class="icons-container">
+                        <a href="https://www.facebook.com/latempestapoland/?fb_dtsg_ag=Adx_JiU0irYd47cohNlqdIxKkbzm_nU8SiRBhaaM88Al9Q%3AAdwfVHL1kOcvcP7CIISckRkLE0m6N9mlX89HBcKA9hTDoQ" target="_blank" class="fa fa-facebook"> 
+                        </a>
+                        <a href="#" target="_blank" class="fa fa-instagram">
+                        </a>
+                        <a href="#" target="_blank" class="fa fa-envelope"> 
+                        </a>
+                    </div>
+                    <div class="logo-container">
+                        <button onClick="window.location.replace('index_de.html')" class="logo-btn">
+                            <img src="img/logo.jpg" alt="logo LaTempesta" class="logo">
+                        </button>
+                    </div>
+                    <div class="languages-container">
+                        <div class="languages-box">
+                            <a href="schlossscharfeneck_pl.html" class="languages">PL</a>
+                        </div>
+                        <div class="languages-box">
+                            <a href="schlossscharfeneck_en.html" class="languages">EN</a>
+                        </div>
+                        <div class="languages-box">
+                            <a href="schlossscharfeneck_de.html" class="languages">DE</a>
+                        </div>
+                    </div>
+                </div>
+            </section>    
+            <section class="main-content">
+                <div class="row">
+                    <article class="article">
+                        <div class="photo-container">
+                            <div class="photo-gallery">
+                                    <img onclick="openModal();currentSlide(1)" src="img/schloss_1.jpg" alt="" class="photo">
+                                    <img onclick="openModal();currentSlide(2)" src="img/schloss_2.jpg" alt="" class="photo">
+                                    <img onclick="openModal();currentSlide(3)" src="img/schloss_3.jpg" alt="" class="photo">
+                            </div>
+                        </div>
+                        <div class="text">
+                            <p class="text-schloss">
+                                <b>SCHLOSS SCHARFENECK</b><br>
+                                <br>
+                                Międzynarodowa Letnia Szkoła Muzyki Dawnej Schloss Scharfeneck odbywa się od 2015 roku na
+                                Zamku Sarny w Kotlinie Kłodzkiej. Organizatorem wydarzenia jest Stowarzyszenie Musica
+                                Humana oraz Fundacja Odbudowy Dworu Sarny. Podczas szkoły odbywają się zajęcia w klasach
+                                mistrzowskich cynku (Jeremy West, Arno Paduch), puzonu (Wim Becu, Stephanie Dyer), skrzypiec
+                                (Martyna Pastuszka) oraz śpiewu (Piotr Kusiewicz, Jakub Burzyński). Każda edycję kończy koncert
+                                finałowy, prezentujący dzieła wokalno-instrumentalne wczesnego baroku. Kierownikiem
+                                artystycznym Szkoły jest Jakub Burzyński.<br>
+                                <br>
+                                <a href="https://www.facebook.com/scharfeneck/" class="link" target="_blank">Profil Szkoły na Facebooku <i class="fas fa-external-link-alt"></i></a><br>
+                                <a href="http://www.zameksarny.pl/schloss-scharfeneck-2018/" class="link" target="_blank">Strona Zamku Sarny <i class="fas fa-external-link-alt"></i></a>
+                            </p>
+                        </div>
+                    </article>
+                    <div id="myModal" class="modal-background">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        
+                        <!-- Modal 1 -->
+                        
+                        <div class="mySlides">
+                            <div class="modal-content">
+                                <img src="img/schloss_1.jpg" class="modal-image" alt="">
+                            </div>
+                        </div>
+                        
+                        <!-- Modal 2 -->
+                        
+                        <div class="mySlides">
+                            <div class="modal-content">
+                                <img src="img/schloss_2.jpg" class="modal-image" alt="">
+                            </div>
+                        </div>
+                        
+                        <!-- Modal 3 -->
+                        
+                        <div class="mySlides">
+                            <div class="modal-content">
+                                <img src="img/schloss_3.jpg" class="modal-image" alt="">
+                            </div>
+                        </div>
+                        
+                        <!--Next/previous controls--> 
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    </div>
+                </div>
+            </section>
+            <section class="footer">
+                <div class="row">
+                    <div class="nav-container">
+                        <button onClick="window.location.replace('latempesta_pl.html')" class="nav-btn">
+                            La
+                            <br>
+                            Tem
+                            <br>
+                            pesta&nbsp;
+                        </button>
+                        <button onClick="window.location.replace('jakubburzynski_pl.html')" class="nav-btn">
+                            Jak
+                            <br>
+                            ub Bu
+                            <br>
+                            rzyński&nbsp;
+                        </button>
+                        <button onClick="window.location.replace('recordings_pl.html');" class="nav-btn">
+                            Dy
+                            <br>
+                            skog
+                            <br>
+                            rafia&nbsp;
+                        </button>
+                        <button onClick="window.location.replace('season2018_pl.html');" class="nav-btn">
+                            Se
+                            <br>
+                            &nbsp;zon
+                            <br>
+                            2018
+                        </button>
+                        <button onClick="window.location.replace('musicahumana_pl.html')" class="nav-btn">
+                            Mus
+                            <br>
+                            ica h
+                            <br>
+                            umana
+                        </button>
+                        <button onClick="window.location.replace('barokwradosci_pl.html');" class="nav-btn">
+                            Bar
+                            <br>
+                            ok w
+                            <br>
+                            Radości
+                        </button>
+                        <button onClick="window.location.replace('schlossscharfeneck_pl.html');" class="nav-btn">
+                            Sch
+                            <br>
+                            loss S
+                            <br>
+                            charfenek
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
