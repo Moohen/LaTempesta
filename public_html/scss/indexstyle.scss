@@ -13,13 +13,26 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.container {
+.bg {
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 306px;
+
+    /* Set up proportionate scaling */
     width: 100%;
-    height: 100vh;
-    background-image: url("../img/background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    height: 100%;
+
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 1920px) { /* Specific to this particular image */
+    .bg {
+        left: 50%;
+        margin-left: -50%;
+    }
 }
 
 .row {
@@ -30,18 +43,22 @@ body {
 
 .topnav-container {
     height: 20vh;
+    position: relative;
 }
 
-.icons-container{
-    position: absolute;
-    top: 1.27vh;
-    left: 44.5vh;
+.topnav-container .row {
+    padding-top: 1.4vh;
+    display: flex;
+    justify-content: center;
+}
+
+.icons-container {
+    position: relative;
+    right: 19.6%;
 }
 
 .fa {
     opacity: 0.95;
-    margin: -10px 0px;
-    padding: 10px 5px;
     font-size: 18px;
     text-align: center;
     text-decoration: none;
@@ -52,7 +69,7 @@ body {
 }
 
 .fa-facebook {
-    //font-size: 28px;
+    font-size: 17px;
     padding: 0px 5px 50px 5px;
     color: rgb(255, 255, 255);
 }
@@ -67,36 +84,34 @@ body {
     color: rgb(255, 255, 255);
 }
 
-.logo-container  {
-    padding: 6vh 0vh;
-    display: flex;
-    justify-content: center;
+.logo-container {
+    position: relative;
+    padding: 4.5vh 0vh;
 }
 
 .logo-btn {
-    height: 14vh;
-    width: 14vh;
+    height: calc(1.09*13vh);
+    width: 13vh;
     outline: none;
     background: none;
     border: none;
     cursor: pointer;
     box-shadow: 8px 8px 5px 3px rgba(10, 10, 10, 0.9);
-    opacity: 0.95;
 }
 
 .logo {
     height: 100%;
     width: 100%;
-}
-
-.logo:hover {
     opacity: 0.85;
 }
 
+.logo:hover {
+    opacity: 1;
+}
+
 .languages-container {
-    position: fixed;
-    top: 1.25vh;
-    right: 45vh;
+    position: relative;
+    left: 21.3%;
 }
 
 .languages {
@@ -110,8 +125,6 @@ body {
 
 .languages:hover {
     opacity: 0.8;
-    //color: rgb(0, 0, 0);
-    //background: rgb(255, 255, 255);
 }
 
 .languages-box {
@@ -131,7 +144,7 @@ body {
 
 .footer .row {
     position: relative;
-    top: 48.5vh;
+    top: 49vh;
 }
 
 .nav-container {
@@ -160,6 +173,62 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 1132px) {
+    .nav-btn {
+        height: 8vh;
+        width: 12vh;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .nav-btn {
+        height: 8vh;
+        width: 14vh;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .nav-btn {
+        height: 8vh;
+        width: 10vh;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .nav-btn {
+        height: 8vh;
+        width: 18vh;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .nav-btn {
+        height: 10vh;
+        width: 20vh;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .nav-btn {
+        height: 10vh;
+        width: 25vh;
+        font-size: 12px;
+    }
+}
+
+@media (max-height: 700px) and (max-width: 1000px) {
+    .nav-btn {
+        height: 8vh;
+        width: 22vh;
+        font-size: 10px;
+    }
 }
 
 .nav-btn:nth-child(1) {
@@ -197,29 +266,186 @@ body {
 }
 
 .nav-btn:nth-child(1):hover {
-    background-color: rgba(214, 12, 12, 0.85);
+    background-color: rgba(186, 0, 0, 0.9);
 }
 
 .nav-btn:nth-child(2):hover {
-    background-color: rgba(255, 14, 70, 0.80);
+    background-color: rgba(219, 72, 11, 0.9);
 }
 
 .nav-btn:nth-child(3):hover {
-    background-color: rgba(255, 167, 41, 0.9);
+    background-color: rgba(247, 146, 47, 0.9);
 }
 
 .nav-btn:nth-child(4):hover {
-    background-color: rgba(255, 236, 62, 0.9);
+    background-color: rgba(255, 239, 63, 0.9);
 }
 
 .nav-btn:nth-child(5):hover {
-    background-color: rgba(24, 204, 119, 0.9);
+    background-color: rgba(84, 175, 78, 0.9);
 }
 
 .nav-btn:nth-child(6):hover {
-    background-color: rgba(32, 139, 250, 0.9);
+    background-color: rgba(57, 122, 185, 0.9);
 }
 
 .nav-btn:nth-child(7):hover {
-    background-color: rgba(160, 47, 207, 0.9);
+    background-color: rgba(109, 35, 101, 0.95);
+}
+
+.nav-btn:nth-child(1) {
+    background-color: none;
+    -webkit-animation-name: rainbowStream1; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.45s; /* Safari 4.0 - 8.0 */
+    animation-name: rainbowStream1;
+    animation-delay: 0.8s;
+    animation-duration: 0.45s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes rainbowStream1 {
+    from {background-color: none;}
+    to {background-color: rgba(186, 0, 0, 0.9);}
+}
+
+/* Standard syntax */
+@keyframes rainbowStream1 {
+    from {background-color: none;}
+    to {background-color: rgba(186, 0, 0, 0.9);}
+}
+
+.nav-btn:nth-child(2) {
+    background-color: none;
+    -webkit-animation-name: rainbowStream1; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.45s; /* Safari 4.0 - 8.0 */
+    animation-name: rainbowStream2;
+    animation-delay: 0.95s;
+    animation-duration: 0.45s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes rainbowStream2 {
+    from {background-color: none;}
+    to {background-color: rgba(219, 72, 11, 0.9)}
+}
+
+/* Standard syntax */
+@keyframes rainbowStream2 {
+    from {background-color: none;}
+    to {background-color: rgba(219, 72, 11, 0.9)}
+}
+
+.nav-btn:nth-child(3) {
+    background-color: none;
+    -webkit-animation-name: rainbowStream1; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.45s; /* Safari 4.0 - 8.0 */
+    animation-name: rainbowStream3;
+    animation-delay: 1.1s;
+    animation-duration: 0.45s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes rainbowStream3 {
+    from {background-color: none;}
+    to {background-color: rgba(247, 146, 47, 0.9)}
+}
+
+/* Standard syntax */
+@keyframes rainbowStream3 {
+    from {background-color: none;}
+    to {background-color: rgba(247, 146, 47, 0.9)}
+}
+
+.nav-btn:nth-child(4) {
+    background-color: none;
+    -webkit-animation-name: rainbowStream1; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.45s; /* Safari 4.0 - 8.0 */
+    animation-name: rainbowStream4;
+    animation-delay: 1.25s;
+    animation-duration: 0.45s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes rainbowStream4 {
+    from {background-color: none;}
+    to {background-color: rgba(255, 239, 63, 0.9)}
+}
+
+/* Standard syntax */
+@keyframes rainbowStream4 {
+    from {background-color: none;}
+    to {background-color: rgba(255, 239, 63, 0.9)}
+}
+
+.nav-btn:nth-child(5) {
+    background-color: none;
+    -webkit-animation-name: rainbowStream1; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.45s; /* Safari 4.0 - 8.0 */
+    animation-name: rainbowStream5;
+    animation-delay: 1.4s;
+    animation-duration: 0.45s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes rainbowStream5 {
+    from {background-color: none;}
+    to {background-color: rgba(84, 175, 78, 0.9)}
+}
+
+/* Standard syntax */
+@keyframes rainbowStream5 {
+    from {background-color: none;}
+    to {background-color: rgba(84, 175, 78, 0.9)}
+}
+
+.nav-btn:nth-child(6) {
+    background-color: none;
+    -webkit-animation-name: rainbowStream1; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.45s; /* Safari 4.0 - 8.0 */
+    animation-name: rainbowStream6;
+    animation-delay: 1.55s;
+    animation-duration: 0.45s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes rainbowStream6 {
+    from {background-color: none;}
+    to {background-color: rgba(57, 122, 185, 0.9)}
+}
+
+/* Standard syntax */
+@keyframes rainbowStream6 {
+    from {background-color: none;}
+    to {background-color: rgba(57, 122, 185, 0.9)}
+}
+
+.nav-btn:nth-child(7) {
+    background-color: none;
+    -webkit-animation-name: rainbowStream1; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.45s; /* Safari 4.0 - 8.0 */
+    animation-name: rainbowStream7;
+    animation-delay: 1.7s;
+    animation-duration: 0.45s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes rainbowStream7 {
+    from {background-color: none;}
+    to {background-color: rgba(109, 35, 101, 0.95)}
+}
+
+/* Standard syntax */
+@keyframes rainbowStream7 {
+    from {background-color: none;}
+    to {background-color: rgba(109, 35, 101, 0.95)}
+}
+
+.authors {
+    position: absolute;
+    bottom: 0.5vh;
+    left: 40%;
+    color: white;
+    opacity: 0.5;
+    font-size: 12px;
+    
 }

@@ -10,36 +10,42 @@
 body {
   font-family: 'Open Sans', sans-serif; }
 
-.container {
+.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 306px;
+  /* Set up proportionate scaling */
   width: 100%;
-  height: 100vh;
-  background-image: url("../img/background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
+  height: 100%;
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0; }
 
+@media screen and (max-width: 1920px) {
+  /* Specific to this particular image */
+  .bg {
+    left: 50%;
+    margin-left: -50%; } }
 .row {
   width: 100%; }
 
 /* Top content */
 .topnav-container {
-  height: 20vh; }
+  height: 15.75vh;
+  position: relative; }
 
 .topnav-container .row {
   padding-top: 1.4vh;
   display: flex;
-  justify-content: center;
-  position: relative; }
+  justify-content: center; }
 
 .icons-container {
-  position: absolute;
-  top: 1.27vh;
-  left: 44.5vh; }
+  position: relative;
+  right: 20.5%; }
 
 .fa {
   opacity: 0.95;
-  margin: -10px 0px;
-  padding: 10px 5px;
   font-size: 18px;
   text-align: center;
   text-decoration: none; }
@@ -60,26 +66,30 @@ body {
   padding: 0px 5px 50px 5px;
   color: white; }
 
+.logo-container {
+  position: relative;
+  margin-top: 2vh; }
+
 .logo-btn {
-  height: 12vh;
-  width: 12vh;
+  height: calc(1.09*9.5vh);
+  width: 9.5vh;
   outline: none;
   background: none;
   border: none;
   cursor: pointer;
-  box-shadow: 4px 4px 5px 3px rgba(10, 10, 10, 0.9); }
+  box-shadow: 2px 2px 5px 3px rgba(10, 10, 10, 0.9); }
 
 .logo {
   height: 100%;
-  width: 100%; }
-
-.logo:hover {
+  width: 100%;
   opacity: 0.85; }
 
+.logo:hover {
+  opacity: 1; }
+
 .languages-container {
-  position: fixed;
-  top: 1.25vh;
-  right: 45vh; }
+  position: relative;
+  left: 22.2%; }
 
 .languages {
   opacity: 0.95;
@@ -102,14 +112,17 @@ body {
 /* Mid content */
 h1 {
   font-size: 24px;
-  font-weight: 600; }
+  font-weight: 600;
+  line-height: 32px; }
 
 h2 {
   font-size: 18px;
-  font-weight: 400; }
+  font-weight: 400;
+  line-height: 28px; }
 
 .main-content {
-  height: 50vh; }
+  height: 54.8vh;
+  position: relative; }
 
 .main-content .row {
   padding-bottom: 0.7vh;
@@ -120,46 +133,71 @@ h2 {
   position: relative; }
 
 .article {
-  height: 54vh;
-  width: 53.5vw;
+  box-shadow: 0px 0px 3px 4px rgba(0, 0, 0, 0.45);
+  height: 54.5vh;
+  width: 54.5vw;
   border-radius: 8px;
-  position: absolute;
-  top: -4.2vh;
+  position: relative;
   left: 50%;
   transform: translateX(-50%);
   background: rgba(242, 242, 240, 0.95);
   overflow: auto;
   display: flex; }
 
+@media screen and (max-width: 1821px) {
+  .article {
+    width: 65vw; } }
+@media screen and (max-width: 1500px) {
+  .article {
+    width: 77vw; } }
+/*@media screen and (max-height: 901px) {
+    .article {
+        width: 53.5vw;
+    }
+}*/
 .text-season {
-  width: 60vh;
+  min-width: 10vh;
   color: rgba(0, 0, 0, 0.9);
   font-size: 16px;
   font-weight: 600;
-  line-height: 1.5;
-  text-align: justify;
+  line-height: 24px;
+  text-align: left;
   padding: 20px;
   padding-top: 30px;
   padding-left: 40px; }
 
+@media screen and (max-width: 1266px) {
+  .text-season {
+    width: 100vh; } }
 .btn-season-container {
   position: sticky;
   top: 6.5vh;
   right: 4.5vh;
+  height: fit-content;
   margin-left: auto;
-  margin-right: 0; }
+  margin-right: 0;
+  width: 50vh; }
 
+@media screen and (max-width: 1266px) {
+  .btn-season-container {
+    display: none; } }
+@media screen and (max-height: 800px) {
+  .btn-season-container {
+    width: 100vh; } }
+@media screen and (max-height: 400px) {
+  .btn-season-container {
+    display: none; } }
 .btn-season-box {
   float: right; }
 
 .btn-season {
-  width: 12vh;
-  height: 5.5vh;
+  width: 117px;
+  height: 54px;
   margin: 0.5vh;
   text-decoration: none;
   display: inline-block;
   border-radius: 4px;
-  border: 2px solid #555555;
+  border: 1px solid #555555;
   border-color: rgba(85, 85, 85, 0.75);
   text-align: center;
   font-size: 16px;
@@ -171,8 +209,9 @@ h2 {
   color: rgba(80, 80, 80, 0.9); }
 
 .btn-season:hover {
-  background-color: #555555;
-  color: white;
+  border-color: #3c0000;
+  background-color: #3c0000;
+  color: #EFA830;
   transition: 0s; }
 
 .btn-season span {
@@ -183,7 +222,7 @@ h2 {
 
 .btn-season span:after {
   content: '\00bb';
-  color: #ffffff;
+  color: #EFA830;
   position: absolute;
   opacity: 0;
   top: 0;
@@ -197,15 +236,6 @@ h2 {
   opacity: 1;
   right: 0; }
 
-/*.left {
-    position: relative;
-    left: 0;
-}
-
-.right {
-    position: relative;
-    right: 0;
-}*/
 .skip-menu {
   margin-top: 17vh; }
 
@@ -239,7 +269,8 @@ h2 {
 
 /* Bottom content */
 .footer {
-  height: 30vh; }
+  position: relative;
+  height: 25.5vh; }
 
 .nav-container {
   display: flex;
@@ -267,6 +298,41 @@ h2 {
   justify-content: center;
   align-items: center; }
 
+@media screen and (max-width: 1132px) {
+  .nav-btn {
+    height: 8vh;
+    width: 12vh;
+    font-size: 16px; } }
+@media screen and (max-width: 700px) {
+  .nav-btn {
+    height: 8vh;
+    width: 14vh;
+    font-size: 14px; } }
+@media screen and (max-width: 500px) {
+  .nav-btn {
+    height: 8vh;
+    width: 10vh;
+    font-size: 10px; } }
+@media screen and (max-height: 700px) {
+  .nav-btn {
+    height: 8vh;
+    width: 18vh;
+    font-size: 16px; } }
+@media screen and (max-height: 500px) {
+  .nav-btn {
+    height: 10vh;
+    width: 20vh;
+    font-size: 14px; } }
+@media screen and (max-height: 450px) {
+  .nav-btn {
+    height: 10vh;
+    width: 25vh;
+    font-size: 12px; } }
+@media (max-height: 700px) and (max-width: 1000px) {
+  .nav-btn {
+    height: 8vh;
+    width: 22vh;
+    font-size: 10px; } }
 .nav-btn:nth-child(1) {
   text-align: right; }
 
@@ -294,25 +360,25 @@ h2 {
   color: rgba(0, 0, 0, 0.85); }
 
 .nav-btn:nth-child(1):hover {
-  background-color: rgba(214, 12, 12, 0.85); }
+  background-color: rgba(186, 0, 0, 0.9); }
 
 .nav-btn:nth-child(2):hover {
-  background-color: rgba(255, 14, 70, 0.8); }
+  background-color: rgba(219, 72, 11, 0.9); }
 
 .nav-btn:nth-child(3):hover {
-  background-color: rgba(255, 167, 41, 0.9); }
+  background-color: rgba(247, 146, 47, 0.9); }
 
 .nav-btn:nth-child(4):hover {
-  background-color: rgba(255, 236, 62, 0.9); }
+  background-color: rgba(255, 239, 63, 0.9); }
 
 .nav-btn:nth-child(5):hover {
-  background-color: rgba(24, 204, 119, 0.9); }
+  background-color: rgba(84, 175, 78, 0.9); }
 
 .nav-btn:nth-child(6):hover {
-  background-color: rgba(32, 139, 250, 0.9); }
+  background-color: rgba(57, 122, 185, 0.9); }
 
 .nav-btn:nth-child(7):hover {
-  background-color: rgba(160, 47, 207, 0.9); }
+  background-color: rgba(109, 35, 101, 0.95); }
 
 /* Scrollbar */
 /* width */
@@ -326,12 +392,12 @@ h2 {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: gray;
+  background: rgba(60, 0, 0, 0.95);
   border-radius: 10px; }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #404040; }
+  background: #3c0000; }
 
 /* Style the Image Used to Trigger the Modal */
 .modal-background {
@@ -387,7 +453,7 @@ h2 {
   color: rgba(255, 255, 255, 0.9);
   font-size: 18px;
   font-weight: 600;
-  line-height: 1.4;
+  line-height: 24px;
   text-align: justify;
   overflow: auto; }
 
@@ -398,7 +464,7 @@ h2 {
   color: rgba(255, 255, 255, 0.9);
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 24px;
   text-align: justify;
   overflow: auto; }
 
@@ -408,7 +474,7 @@ h2 {
   color: rgba(255, 255, 255, 0.9);
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 24px;
   text-align: justify;
   overflow: auto; }
 
@@ -418,7 +484,7 @@ h2 {
   color: rgba(255, 255, 255, 0.9);
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 24px;
   text-align: justify;
   overflow: auto; }
 
@@ -428,7 +494,7 @@ h2 {
   color: rgba(255, 255, 255, 0.9);
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 24px;
   text-align: justify;
   overflow: auto; }
 
@@ -439,7 +505,7 @@ h2 {
   color: rgba(255, 255, 255, 0.9);
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 24px;
   text-align: justify;
   overflow: auto; }
 
@@ -449,7 +515,7 @@ h2 {
   color: rgba(255, 255, 255, 0.9);
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 24px;
   text-align: justify;
   overflow: auto; }
 
@@ -523,5 +589,12 @@ h2 {
 @media only screen and (max-width: 700px) {
   .modal-content {
     width: 100%; } }
+.authors {
+  position: absolute;
+  bottom: 0.5vh;
+  left: 40%;
+  color: white;
+  opacity: 0.5;
+  font-size: 12px; }
 
 /*# sourceMappingURL=season2018style.css.map */

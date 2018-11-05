@@ -8,18 +8,22 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/v4-shims.css">
         <link rel="stylesheet" href="css/recordingsstyle.css"/>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.nicescroll.js"></script>
+        <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
         <script type="text/javascript" src="js/lightbox.js"></script>
     </head>
     <body>
+        <img src="img/background_1.jpg" onClick="window.location.replace('index_en.html')" alt="" class="bg">
         <div class="container">
             <section class="topnav-container">
                 <div class="row">
                     <div class="icons-container">
                         <a href="https://www.facebook.com/latempestapoland/?fb_dtsg_ag=Adx_JiU0irYd47cohNlqdIxKkbzm_nU8SiRBhaaM88Al9Q%3AAdwfVHL1kOcvcP7CIISckRkLE0m6N9mlX89HBcKA9hTDoQ" target="_blank" class="fa fa-facebook">
                         </a>
-                        <a href="#" target="_blank" class="fa fa-instagram">
+                        <a href="https://www.instagram.com/latempesta_pl/?fbclid=IwAR1MjsKmbHGxxed4AhKMc3nNmbGAGJIEpvfy6XHg-zsExxTcaDDQXOG_43M" target="_blank" class="fa fa-instagram">
                         </a>
-                        <a href="#" target="_blank" class="fa fa-envelope"> 
+                        <a href="contact_en.html" class="fa fa-envelope">
                         </a>
                     </div>
                     <div class="logo-container">
@@ -45,21 +49,27 @@
                     <article class="article-recordings">
                         <div class="mid-recordings">
                             <img onclick="openModal();currentSlide(1)" src="img/zielenski.jpg" alt="" class="photo-top-recording">
-                            <img onclick="openModal();currentSlide(2)" src="img/benda_handel.jpg" alt="" class="photo-mid-recordings">
-                            <img onclick="openModal();currentSlide(3)" src="img/penderecki_front.jpg" alt="" class="photo-mid-recordings">
-                            <img onclick="openModal();currentSlide(4)" src="img/żywot_człowieka_front.jpg" alt="" class="photo-mid-recordings">
-                            <img onclick="openModal();currentSlide(5)" src="img/purification_front.jpg" alt="" class="photo-mid-recordings">
-                            <img onclick="openModal();currentSlide(6)" src="img/lacrimosa.jpg" alt="" class="photo-mid-recordings">
-                            <img onclick="openModal();currentSlide(7)" src="img/vespers_sorrow_front.jpg" alt="" class="photo-mid-recordings">
-                            <img onclick="openModal();currentSlide(8)" src="img/canon_front.jpg" alt="" class="photo-mid-recordings">
-                            <img onclick="openModal();currentSlide(9)" src="img/jesien_front.jpg" alt="" class="photo-mid-recordings" style="margin-right: 50vh;">
-                            <img onclick="openModal();currentSlide(10)" src="img/claromontana_37.jpg" alt="" class="photo-mid-recordings">
-                            <img onclick="openModal();currentSlide(11)" src="img/claromontana_34.jpg" alt="" class="photo-mid-recordings">
-                            <img onclick="openModal();currentSlide(12)" src="img/claromontana_33.jpg" alt="" class="photo-mid-recordings">
-                            <img onclick="openModal();currentSlide(13)" src="img/claromontana_29.jpg" alt="" class="photo-mid-recordings">
-                            <img onclick="openModal();currentSlide(14)" src="img/claromontana_28.jpg" alt="" class="photo-mid-recordings">
-                            <img onclick="openModal();currentSlide(15)" src="img/claromontana_27.jpg" alt="" class="photo-mid-recordings">
-                            <img onclick="openModal();currentSlide(16)" src="img/claromontana_17.jpg" alt="" class="photo-mid-recordings">
+                            <div class="mid-block">
+                                <img onclick="openModal();currentSlide(2)" src="img/benda_handel.jpg" alt="" class="photo-mid-recordings">
+                                <img onclick="openModal();currentSlide(3)" src="img/penderecki_front.jpg" alt="" class="photo-mid-recordings">
+                                <img onclick="openModal();currentSlide(4)" src="img/żywot_człowieka_front.jpg" alt="" class="photo-mid-recordings">
+                                <img onclick="openModal();currentSlide(5)" src="img/purification_front.jpg" alt="" class="photo-mid-recordings">
+                                <img onclick="openModal();currentSlide(6)" src="img/lacrimosa.jpg" alt="" class="photo-mid-recordings">
+                                <img onclick="openModal();currentSlide(7)" src="img/vespers_sorrow_front.jpg" alt="" class="photo-mid-recordings">
+                                <img onclick="openModal();currentSlide(8)" src="img/canon_front.jpg" alt="" class="photo-mid-recordings">
+                                <img onclick="openModal();currentSlide(9)" src="img/jesien_front.jpg" alt="" class="photo-mid-recordings">
+                            </div>
+                            <div class="mid-block">
+                                <div class="block-bottom">
+                                    <img onclick="openModal();currentSlide(10)" src="img/claromontana_37.jpg" alt="" class="photo-mid-recordings">
+                                    <img onclick="openModal();currentSlide(11)" src="img/claromontana_34.jpg" alt="" class="photo-mid-recordings">
+                                    <img onclick="openModal();currentSlide(12)" src="img/claromontana_33.jpg" alt="" class="photo-mid-recordings">
+                                    <img onclick="openModal();currentSlide(13)" src="img/claromontana_29.jpg" alt="" class="photo-mid-recordings">
+                                    <img onclick="openModal();currentSlide(14)" src="img/claromontana_28.jpg" alt="" class="photo-mid-recordings">
+                                    <img onclick="openModal();currentSlide(15)" src="img/claromontana_27.jpg" alt="" class="photo-mid-recordings">
+                                    <img onclick="openModal();currentSlide(16)" src="img/claromontana_17.jpg" alt="" class="photo-mid-recordings">
+                                </div>
+                            </div>
                         </div>
                     </article>
 
@@ -825,28 +835,32 @@
                             <br>
                             Tem
                             <br>
-                            pesta&nbsp;
+                            pesta
+                            <br>
                         </button>
                         <button onClick="window.location.replace('jakubburzynski_en.html')" class="nav-btn">
                             Jak
                             <br>
                             ub Bu
                             <br>
-                            rzyński&nbsp;
+                            rzyński
+                            <br>
                         </button>
                         <button onClick="window.location.replace('recordings_en.html');" class="nav-btn">
-                            Dy
+                            Re
                             <br>
-                            skog
+                            cor
                             <br>
-                            rafia&nbsp;
+                            dings
+                            <br>
                         </button>
                         <button onClick="window.location.replace('season2018_en.html');" class="nav-btn">
-                            Se
+                            Sea
                             <br>
-                            &nbsp;zon
+                            son
                             <br>
                             2018
+                            <br>
                         </button>
                         <button onClick="window.location.replace('musicahumana_en.html')" class="nav-btn">
                             Mus
@@ -872,6 +886,24 @@
                     </div>
                 </div>
             </section>
+            <p class="authors">
+                Design by: Jakub Burzyński & Mateusz Czekała | Webdeveloper: Mateusz Czekała
+            </p>
         </div>
+        <script>
+            $(".article").niceScroll({
+                cursorwidth: "10px",
+                cursorcolor: "rgba(60, 0, 0, 1)",
+                cursorborder: "1px solid rgba(60, 0, 0, 1)",
+                cursorborderradius: "10px"
+            });
+        </script>
+<!--        <script>
+            $(".modal-background").niceScroll({
+                cursorwidth: "10px",
+                cursorcolor: "rgba(60, 0, 0, 1)",
+                cursorborder: "1px solid rgba(60, 0, 0, 1)"
+            });
+        </script>-->
     </body>
 </html>

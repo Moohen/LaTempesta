@@ -114,6 +114,9 @@ body {
   height: 54.8vh;
   position: relative; }
 
+@media screen and (max-width: 1441px) {
+  .main-content {
+    height: 55.8vh; } }
 .main-content .row {
   padding-bottom: 0.7vh;
   padding-left: 2vw;
@@ -136,67 +139,27 @@ body {
   justify-content: center;
   overflow: auto; }
 
-@media screen and (max-width: 1821px) {
+@media screen and (max-width: 1441px) {
   .article {
-    width: 65vw; } }
-@media screen and (max-width: 1500px) {
+    width: 70vw; } }
+@media screen and (max-width: 901px) {
   .article {
-    width: 77vw; } }
-@media screen and (max-width: 1105px) {
-  .article {
-    display: block; } }
+    width: 80vw; } }
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  text-align: center;
+  padding-bottom: 5vh; }
+
 .text {
-  max-height: 100%;
-  max-width: 45%; }
-
-@media screen and (max-width: 1105px) {
-  .text {
-    max-width: fit-content; } }
-.text-schloss {
   color: rgba(0, 0, 0, 0.9);
-  font-size: 16px;
+  font-size: 28px;
   font-weight: 600;
-  line-height: 24px;
-  padding: 5vh 6vh 5.5vh 2vh;
-  text-align: justify; }
+  text-align: left; }
 
-@media screen and (max-width: 1105px) {
-  .text-schloss {
-    padding: 5vh 6vh 5.5vh 6vh; } }
-.photo-container {
-  margin: 0vh 0vh 0vh 6vh; }
-
-@media screen and (max-width: 1105px) {
-  .photo-container {
-    display: none; } }
-.photo {
-  position: sticky;
-  top: 0;
-  left: 0;
-  cursor: pointer;
-  transition: 0.3s;
-  height: calc(1.42*14.5vh);
-  width: 14.5vh;
-  margin: 0vh 2vh 0vh 0vh; }
-
-@media screen and (max-width: 1288px) {
-  .photo {
-    height: calc(1.42*12.5vh);
-    width: 12.5vh; } }
-@media screen and (max-width: 1288px) {
-  .photo {
-    height: calc(1.42*10.5vh);
-    width: 10.5vh; } }
-.photo:hover {
-  transition: 0.3s;
-  box-shadow: 0px 0px 3px 4px rgba(0, 0, 0, 0.7); }
-
-.link {
-  color: black;
-  text-decoration: none; }
-
-.fa-external-link-alt {
-  color: black; }
+.contact-text {
+  padding-bottom: 5.5vh; }
 
 /* Bottom content */
 .footer {
@@ -314,94 +277,6 @@ body {
 .nav-btn:nth-child(7):hover {
   background-color: rgba(109, 35, 101, 0.95); }
 
-/* Recordings modal */
-/* Style the Image Used to Trigger the Modal */
-.modal-background {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 40px;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.97);
-  justify-content: center; }
-
-.modal-content {
-  height: 80vh;
-  width: 80vw;
-  display: flex;
-  padding: 2vh 20px; }
-
-.modal-image {
-  margin: auto;
-  height: calc(1.41*60vh);
-  width: 60vh; }
-
-.p-line {
-  border-bottom: 1px solid white; }
-
-/* Add Animation - Zoom in the Modal */
-.modal-content {
-  animation-name: zoom;
-  animation-duration: 0.5s; }
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -70px;
-  color: #f1f1f1;
-  font-weight: 400;
-  font-size: 36px;
-  transition: 0.6s ease;
-  user-select: none;
-  -webkit-user-select: none; }
-
-/* Position the "next button" to the right */
-.next {
-  right: 4vh; }
-
-.prev {
-  left: 4vh; }
-
-.next:hover {
-  color: #bbb; }
-
-.prev:hover {
-  color: #bbb; }
-
-@keyframes zoom {
-  from {
-    transform: scale(0.5); }
-  to {
-    transform: scale(1); } }
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 125px;
-  right: 125px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s; }
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer; }
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px) {
-  .modal-content {
-    width: 100%; } }
 /* Scrollbar */
 /* width */
 ::-webkit-scrollbar {
@@ -414,12 +289,12 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: gray;
+  background: rgba(60, 0, 0, 0.95);
   border-radius: 10px; }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #404040; }
+  background: #3c0000; }
 
 .authors {
   position: absolute;
@@ -429,4 +304,4 @@ body {
   opacity: 0.5;
   font-size: 12px; }
 
-/*# sourceMappingURL=schlossscharfeneckstyle.css.map */
+/*# sourceMappingURL=contactstyle.css.map */

@@ -8,17 +8,21 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/v4-shims.css">
         <link rel="stylesheet" href="css/jakubburzynskistyle.css"/>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.nicescroll.js"></script>
+        <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
     </head>
     <body>
+        <img src="img/background_1.jpg" onClick="window.location.replace('index_de.html')" alt="" class="bg">
         <div class="container">
             <section class="topnav-container">
                 <div class="row">
                     <div class="icons-container">
                         <a href="https://www.facebook.com/latempestapoland/?fb_dtsg_ag=Adx_JiU0irYd47cohNlqdIxKkbzm_nU8SiRBhaaM88Al9Q%3AAdwfVHL1kOcvcP7CIISckRkLE0m6N9mlX89HBcKA9hTDoQ" target="_blank" class="fa fa-facebook">
                         </a>
-                        <a href="#" target="_blank" class="fa fa-instagram">
+                        <a href="https://www.instagram.com/latempesta_pl/?fbclid=IwAR1MjsKmbHGxxed4AhKMc3nNmbGAGJIEpvfy6XHg-zsExxTcaDDQXOG_43M" target="_blank" class="fa fa-instagram">
                         </a>
-                        <a href="#" target="_blank" class="fa fa-envelope"> 
+                        <a href="contact_de.html" class="fa fa-envelope"> 
                         </a>
                     </div>
                     <div class="logo-container">
@@ -42,13 +46,13 @@
             <section class="main-content">
                 <div class="row">
                     <article class="article">
-                        <div class="photo">
-                            <img src="img/jakubburzynski.jpg" alt="" class="burzynski-photo">
-                        </div>
                         <div class="text">
                             <p class="burzynskitext">
                                 <b>JAKUB BURZYŃSKI</b> wurde 1976 in Zabrze (Polen) geboren. Ursprünglich lernte er Klavier. Er absolvierte die Studien der Musiktheorie an der Hochschule für Musik in Kattowitz und Sologesang an der Musikakademie in Bydgoszcz. Er studierte auch Dirigieren. 1998 gründete er das Ensemble La Tempesta, mit dem er regelmäßig Konzerte gibt und CDs mit Musik aus dem 16. bis 19. Jahrhundert einspielt. Er verkörperte Hauptrollen in Opern von Charpentier (Actéon), Purcell (King Arthur), Vivaldi (Dorilla in Tempe), Sarro (Didone abbandonata), Händel (Giulio Cesare, Rinaldo), Mysliveček (Motezuma), Mozart (Apollo et Hyacinthus, Mitridate re di Ponto), Krauze (Balthazar) und Zych (Poiesis). Als Solist und Dirigent spielte er einige Dutzend CDs für folgende Plattenfirmen ein: BIS, ARTS, DIVOX, NAXOS, MUSICON und DUX, darunter zehn Alben mit polnischer Musik. Die CD Vespers of Sorrow mit Werken von Antonio Vivaldi wurde vom britischen Portal Music Web International zur „Aufnahme des Jahres“ erklärt. Jakub Burzyński ist künstlerischer Leiter des Musikfestival Barok w Radości, langjähriger Lehrbeauftragter der Sommerakademie für Barockmusik (Letní škola barokní hudby) in Kelč, Holešov, Broumov und Valtice (Tschechien), künstlerischer Leiter der Internationalen Schule für Alte Musik auf Schloss Scharfeneck sowie regelmäßiger Vortragender beim Festival der Leisen Musik (Festiwal Cichej Muzyki) in Toruń.
                             </p>
+                        </div>
+                        <div class="photo">
+                            <img src="img/jakubburzynski.jpg" alt="" class="burzynski-photo">
                         </div>
                     </article>
                 </div>
@@ -61,28 +65,32 @@
                             <br>
                             Tem
                             <br>
-                            pesta&nbsp;
+                            pesta
+                            <br>
                         </button>
                         <button onClick="window.location.replace('jakubburzynski_de.html')" class="nav-btn">
                             Jak
                             <br>
                             ub Bu
                             <br>
-                            rzyński&nbsp;
+                            rzyński
+                            <br>
                         </button>
                         <button onClick="window.location.replace('recordings_de.html');" class="nav-btn">
-                            Dy
+                            Di
                             <br>
-                            skog
+                            sko
                             <br>
-                            rafia&nbsp;
+                            grafie
+                            <br>
                         </button>
                         <button onClick="window.location.replace('season2018_de.html');" class="nav-btn">
-                            Se
+                            Sai
                             <br>
-                            &nbsp;zon
+                            son
                             <br>
                             2018
+                            <br>
                         </button>
                         <button onClick="window.location.replace('musicahumana_de.html')" class="nav-btn">
                             Mus
@@ -108,6 +116,17 @@
                     </div>
                 </div>
             </section>
+            <p class="authors">
+                Design by: Jakub Burzyński & Mateusz Czekała | Webdeveloper: Mateusz Czekała
+            </p>
         </div>
+        <script>
+            $(".article").niceScroll({
+                cursorwidth: "10px",
+                cursorcolor: "rgba(60, 0, 0, 1)",
+                cursorborder: "1px solid #fff",
+                cursorborderradius: "10px"
+            });
+        </script>
     </body>
 </html>

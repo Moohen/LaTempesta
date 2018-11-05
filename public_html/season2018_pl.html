@@ -8,18 +8,22 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/v4-shims.css">
         <link rel="stylesheet" href="css/season2018style.css"/>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.nicescroll.js"></script>
+        <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
         <script type="text/javascript" src="js/lightboxseason.js"></script>
     </head>
     <body>
+        <img src="img/background_1.jpg" onClick="window.location.replace('index.html')" alt="" class="bg">
         <div class="container">
             <section class="topnav-container">
                 <div class="row">
                     <div class="icons-container">
                         <a href="https://www.facebook.com/latempestapoland/?fb_dtsg_ag=Adx_JiU0irYd47cohNlqdIxKkbzm_nU8SiRBhaaM88Al9Q%3AAdwfVHL1kOcvcP7CIISckRkLE0m6N9mlX89HBcKA9hTDoQ" target="_blank" class="fa fa-facebook">   
                         </a>
-                        <a href="#" target="_blank" class="fa fa-instagram">
+                        <a href="https://www.instagram.com/latempesta_pl/?fbclid=IwAR1MjsKmbHGxxed4AhKMc3nNmbGAGJIEpvfy6XHg-zsExxTcaDDQXOG_43M" target="_blank" class="fa fa-instagram">
                         </a>
-                        <a href="#" target="_blank" class="fa fa-envelope"> 
+                        <a href="contact_pl.html" class="fa fa-envelope"> 
                         </a>
                     </div>
                     <div class="logo-container">
@@ -462,20 +466,6 @@
                                 <button onclick="openModal();currentSlide(8)" class="btn-season"><span>Listopad</span></button>
                                 <button onclick="openModal();currentSlide(9)" class="btn-season"><span>Grudzień</span></button>
                             </div>
-<!--                            <div class="skip-menu">
-                                <p>
-                                    <i class="fas fa-link"></i>
-                                    <a href="#IV" class="skip">IV</a>
-                                    <a href="#V" class="skip">V</a>
-                                    <a href="#VI" class="skip">VI</a>
-                                    <a href="#VII" class="skip">VII</a>
-                                    <a href="#VIII" class="skip">VIII</a>
-                                    <a href="#IX" class="skip">IX</a>
-                                    <a href="#X" class="skip">X</a>
-                                    <a href="#XI" class="skip">XI</a>
-                                    <a href="#XII" class="skip">XII</a>
-                                </p>
-                            </div>-->
                         </div>
                     </article>
 
@@ -851,6 +841,7 @@
                                     </div>  
                                     <div class="modal-box-pazdziernik" >
                                         <img src="img/pazdziernik_pszczyna.png" class="modal-image-pazdziernik"  alt="">
+                                        <img src="img/pazdziernik_torun.jpg" class="modal-image-pazdziernik"  alt="">
                                     </div>
                                 </div>
                             </div>
@@ -944,28 +935,32 @@
                             <br>
                             Tem
                             <br>
-                            pesta&nbsp;
+                            pesta
+                            <br>
                         </button>
                         <button onClick="window.location.replace('jakubburzynski_pl.html')" class="nav-btn">
                             Jak
                             <br>
                             ub Bu
                             <br>
-                            rzyński&nbsp;
+                            rzyński
+                            <br>
                         </button>
                         <button onClick="window.location.replace('recordings_pl.html');" class="nav-btn">
                             Dy
                             <br>
                             skog
                             <br>
-                            rafia&nbsp;
+                            rafia
+                            <br>
                         </button>
                         <button onClick="window.location.replace('season2018_pl.html');" class="nav-btn">
                             Se
                             <br>
-                            &nbsp;zon
+                            zon
                             <br>
                             2018
+                            <br>
                         </button>
                         <button onClick="window.location.replace('musicahumana_pl.html')" class="nav-btn">
                             Mus
@@ -991,6 +986,17 @@
                     </div>
                 </div>
             </section>
+            <p class="authors">
+                Design by: Jakub Burzyński & Mateusz Czekała | Webdeveloper: Mateusz Czekała
+            </p>
         </div>
+        <script>
+            $(".article").niceScroll({
+                cursorwidth: "10px",
+                cursorcolor: "rgba(60, 0, 0, 1)",
+                cursorborder: "1px solid #fff",
+                cursorborderradius: "10px"
+            });
+        </script>
     </body>
 </html>
